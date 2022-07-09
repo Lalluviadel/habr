@@ -1,0 +1,18 @@
+{% extends 'articles/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div id="layoutSidenav_content">
+        <main>
+            <div class="container-fluid text-center">
+                <h1 class="mt-4">Заголовок</h1>
+                <div class="row main p-3 border border-grey mt-1">
+                    <div class="col-12 mt-5">
+                        Привет! Это временный текст для нашей главной странички.
+                    </div>
+                </div>
+            </div>
+        </main>
+        {% include 'articles/includes/footer.html' %}
+    </div>
+{% endblock %}
