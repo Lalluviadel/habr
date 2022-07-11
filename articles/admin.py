@@ -1,3 +1,6 @@
+"""Provides package integration into the admin panel."""
 from django.contrib import admin
 
-# Register your models here.
+from articles.models import Category
+
+admin.site.register(Category)

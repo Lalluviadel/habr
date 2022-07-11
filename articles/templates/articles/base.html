@@ -1,4 +1,6 @@
 {% load static %}
+{% load custom_tags %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -54,64 +56,12 @@
     </ul>
 </nav>
 
-<!-- Пункты меню -->
 <div id="layoutSidenav">
-    <div id="layoutSidenav_nav">
-        <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
-            <div class="sb-sidenav-menu">
-                <div class="nav">
-                    <div class="sb-sidenav-menu-heading">Приложения</div>
-                    <a class="nav-link" href="#">
-                        Дизайн
-                    </a>
-                    <a class="nav-link" href="#">
-                        Веб-разработка
-                    </a>
-                    <a class="nav-link" href="#">
-                        Мобильная разработка
-                    </a>
-                    <a class="nav-link" href="#">
-                        Маркетинг
-                    </a>
 
-                    <!-- Задел для будущего пункта меню Мой профиль -->
-                    {#                    {% if user.is_authenticated %}#}
-                    {#                        <a class="nav-link" href="{% url 'users:profile' %}">#}
-                    {#                            <div class="sb-nav-link-icon">#}
-                    {#                                <i class="fa fa-user grey"></i>#}
-                    {#                            </div>#}
-                    {#                            Мой профиль#}
-                    {#                        </a>#}
-                    {#                        <a id="my_profile"></a>#}
-                    {#                    {% else %}#}
-                    {#                        <a class="nav-link" href="{% url 'users:login' %}">#}
-                    {#                            <div class="sb-nav-link-icon">#}
-                    {#                                <i class="fa fa-user grey"></i>#}
-                    {#                            </div>#}
-                    {#                            Авторизация на сайте#}
-                    {#                        </a>#}
-                    {#                    {% endif %}#}
+<!-- Пункты меню (использован templatetag) -->
+{% show_categories %}
 
-                    <input type="button" class="btn btn-block btn-grey blacked"
-                           onclick="window.location.href = 'http://127.0.0.1:8000/admin';"
-                           value="К админке"/>
-
-                    <!-- Задел для будущего пункта меню перехода к админке -->
-                    {#                    {% if user.is_staff %}#}
-                    {#                        <input type="button" class="btn btn-block btn-grey blacked"#}
-                    {#                               onclick="window.location.href = '#';"#}
-                    {#                               value="К админке"/>#}
-                    {#                    {% endif %}#}
-
-                    <button onClick="javascript:history.go(-1);" type="submit" class="btn btn-block btn-grey blacked">
-                        <i class="fa fa-undo"></i> Назад
-                    </button>
-                </div>
-
-            </div>
-            <div class="sb-sidenav-footer"></div>
-        </nav>
-    </div>
+<!-- Основное содержимое страницы подгружаем сюда -->
     {% block content %}
     {% endblock %}
 </div>
