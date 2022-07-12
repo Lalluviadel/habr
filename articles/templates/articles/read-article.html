@@ -1,0 +1,55 @@
+{% extends 'articles/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div id="layoutSidenav_content">
+        <main>
+            <div class="container-fluid text-center">
+                <div class="row main p-3 mt-1">
+                    <div class="col-3">
+
+                        <div>
+                            <div class="col-12 row border">
+                                <p>Добавлена: {{ article.registration_time | date }}</p>
+                            </div>
+                            <div class="col-12 row border">
+                                <p> Категория: <strong>{{ article.category }}</strong></p>
+                            </div>
+                            <div class="col-12 row border">
+                                <p> Автор: {{ article.user }}</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-9 mt-3 underlined">
+                        <h3>{{ article.title }}</h3>
+                    </div>
+
+                    <div class="col-12 mt-5 menu-font">
+                        {{ article.body | safe }}
+                    </div>
+
+                    <div class="col-12 mt-1 text-right">
+                        <hr>
+                        Теги:
+                        {% for tag in article.tag.all %}
+                            <u><a href="#">{{ tag }}</a></u>{% if not forloop.last %}, {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-6">
+                        <a class='btn btn-outline-dark btn-grey btn-block ml-3 mr-1 mb-1'
+                           href='#'>К статьям категории {{ article.category }}</a>
+                    </div>
+                    <div class="col-6">
+                        <a class='btn btn-outline-dark btn-grey btn-block ml-3 mr-1 mb-1'
+                           href='{% url 'index' %}'>На главную</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        {% include 'articles/includes/footer.html' %}
+    </div>
+{% endblock %}

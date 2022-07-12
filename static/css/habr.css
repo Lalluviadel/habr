@@ -52,7 +52,7 @@ body {
 !important;
 }
 
-.underlined h3:after {
+.underlined h1, h3:after {
     content: "";
     position: absolute;
     height: 2px;
@@ -64,7 +64,7 @@ body {
     right: 0;
 }
 
-.underlined h3:before {
+.underlined h1, h3:before {
     content: "";
     position: absolute;
     height: 2px;

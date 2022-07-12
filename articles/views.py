@@ -21,10 +21,4 @@ class ArticleView(DetailView):
     """View for the output of a separate article."""
     model = Article
     template_name = 'articles/read-article.html'
-
-    def get_context_data(self, *args, **kwargs):
-        """Getting a specific article and passing it to the context."""
-        context = super().get_context_data(**kwargs)
-        article = get_object_or_404(Article, pk=self.kwargs.get('pk'))
-        context['post'] = article
-        return context
+    slug_url_kwarg = 'article_slug'
