@@ -1,0 +1,258 @@
+[
+{
+  "model": "articles.tag",
+  "pk": 1,
+  "fields": {
+    "tag_name": "Python",
+    "slug": "python"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 2,
+  "fields": {
+    "tag_name": "C#",
+    "slug": "c"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 3,
+  "fields": {
+    "tag_name": "Ruby",
+    "slug": "ruby"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 4,
+  "fields": {
+    "tag_name": "PHP",
+    "slug": "php"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 5,
+  "fields": {
+    "tag_name": "Java",
+    "slug": "java"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 6,
+  "fields": {
+    "tag_name": "JS",
+    "slug": "js"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 7,
+  "fields": {
+    "tag_name": "MySQL",
+    "slug": "mysql"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 8,
+  "fields": {
+    "tag_name": "PostgresSQL",
+    "slug": "postgressql"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 9,
+  "fields": {
+    "tag_name": "Oracle",
+    "slug": "oracle"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 10,
+  "fields": {
+    "tag_name": "Linux",
+    "slug": "linux"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 11,
+  "fields": {
+    "tag_name": "Игровая платформа",
+    "slug": "igrovaya-platforma"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 12,
+  "fields": {
+    "tag_name": "ERP-системы",
+    "slug": "erpsistemy"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 13,
+  "fields": {
+    "tag_name": "Разработка игр",
+    "slug": "razrabotka-igr"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 14,
+  "fields": {
+    "tag_name": "Интернет маркетинг",
+    "slug": "internet-marketing"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 15,
+  "fields": {
+    "tag_name": "Продвижение игр",
+    "slug": "prodvizhenie-igr"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 16,
+  "fields": {
+    "tag_name": "Информационная безопасность",
+    "slug": "informacionnaya-bezopasnost"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 17,
+  "fields": {
+    "tag_name": "Разработка веб-сайтов",
+    "slug": "razrabotka-veb-sajtov"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 18,
+  "fields": {
+    "tag_name": "Контекстная реклама",
+    "slug": "kontekstnaya-reklama"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 19,
+  "fields": {
+    "tag_name": "Разработка под iOS",
+    "slug": "razrabotka-pod-ios"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 20,
+  "fields": {
+    "tag_name": "Разработка мобильных приложений",
+    "slug": "razrabotka-mobilnyh-prilozhenij"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 21,
+  "fields": {
+    "tag_name": "Разработка под Android",
+    "slug": "razrabotka-pod-android"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 22,
+  "fields": {
+    "tag_name": "IT-компании",
+    "slug": "it-kompanii"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 23,
+  "fields": {
+    "tag_name": "Дизайн в индустрии транспорта",
+    "slug": "dizajn-v-industrii-transporta"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 24,
+  "fields": {
+    "tag_name": "HTML",
+    "slug": "html"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 25,
+  "fields": {
+    "tag_name": "CSS",
+    "slug": "css"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 26,
+  "fields": {
+    "tag_name": "front-end",
+    "slug": "front-end"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 27,
+  "fields": {
+    "tag_name": "back-end",
+    "slug": "back-end"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 28,
+  "fields": {
+    "tag_name": "XML",
+    "slug": "xml"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 29,
+  "fields": {
+    "tag_name": "JSON",
+    "slug": "json"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 30,
+  "fields": {
+    "tag_name": "Веб-дизайн",
+    "slug": "veb-dizajn"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 31,
+  "fields": {
+    "tag_name": "Графический дизайн",
+    "slug": "graficheskij-dizajn"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 32,
+  "fields": {
+    "tag_name": "Дизайн мобильных приложений",
+    "slug": "dizajn-mobilnyh-prilozhenij"
+  }
+}
+]

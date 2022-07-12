@@ -4,6 +4,7 @@
   "pk": 1,
   "fields": {
     "category_name": "Дизайн",
+    "slug": "dizajn",
     "is_active": true
   }
 },
@@ -11,7 +12,8 @@
   "model": "articles.category",
   "pk": 2,
   "fields": {
-    "category_name": "Маркетинг",
+    "category_name": "Веб-разработка",
+    "slug": "veb-razrabotka",
     "is_active": true
   }
 },
@@ -19,7 +21,8 @@
   "model": "articles.category",
   "pk": 3,
   "fields": {
-    "category_name": "Веб-разработка",
+    "category_name": "Мобильная разработка",
+    "slug": "mobilnaya-razrabotka",
     "is_active": true
   }
 },
@@ -27,7 +30,8 @@
   "model": "articles.category",
   "pk": 4,
   "fields": {
-    "category_name": "Мобильная разработка",
+    "category_name": "Маркетинг",
+    "slug": "marketing",
     "is_active": true
   }
 }

@@ -1,0 +1,94 @@
+[
+{
+  "model": "articles.habruser",
+  "pk": "0a3d6046-1802-4da8-9458-030864f900b1",
+  "fields": {
+    "password": "pbkdf2_sha256$260000$xywsTmYQEcHpVOVD0xaVus$E7UyfSwdFJUNa/wadYkXVZm5KiLGKViFPA9231KlX4o=",
+    "last_login": "2022-07-12T14:32:10.637Z",
+    "is_superuser": true,
+    "is_staff": true,
+    "date_joined": "2022-07-12T13:07:44.868Z",
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "avatar": "",
+    "email": "admin@mail.ru",
+    "age": 18,
+    "registration_time": "2022-07-12T13:07:25.193Z",
+    "is_active": true,
+    "activation_key": "",
+    "activation_key_expires": "2022-07-14T13:07:25.193Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "articles.habruser",
+  "pk": "5d06f46d-0bff-43da-a85e-41d74235093f",
+  "fields": {
+    "password": "user3",
+    "last_login": null,
+    "is_superuser": false,
+    "is_staff": false,
+    "date_joined": "2022-07-12T13:09:27Z",
+    "username": "user3",
+    "first_name": "user3",
+    "last_name": "user3",
+    "avatar": "",
+    "email": "user3@mail.ru",
+    "age": 18,
+    "registration_time": "2022-07-12T13:08:03Z",
+    "is_active": true,
+    "activation_key": "",
+    "activation_key_expires": "2022-07-14T13:08:03Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "articles.habruser",
+  "pk": "6c1be9ea-b5ea-4d3a-b44e-0aa0402264a5",
+  "fields": {
+    "password": "user1",
+    "last_login": null,
+    "is_superuser": false,
+    "is_staff": false,
+    "date_joined": "2022-07-12T13:08:42Z",
+    "username": "user1",
+    "first_name": "user1",
+    "last_name": "user1",
+    "avatar": "",
+    "email": "user1@mail.ru",
+    "age": 18,
+    "registration_time": "2022-07-12T13:08:03Z",
+    "is_active": true,
+    "activation_key": "",
+    "activation_key_expires": "2022-07-14T13:08:03Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "articles.habruser",
+  "pk": "ad8a5d72-8196-4981-a5d3-e4194d3ca0ef",
+  "fields": {
+    "password": "user2",
+    "last_login": null,
+    "is_superuser": false,
+    "is_staff": false,
+    "date_joined": "2022-07-12T13:09:07Z",
+    "username": "user2",
+    "first_name": "user2",
+    "last_name": "user2",
+    "avatar": "",
+    "email": "user2@user2.ru",
+    "age": 18,
+    "registration_time": "2022-07-12T13:08:03Z",
+    "is_active": true,
+    "activation_key": "",
+    "activation_key_expires": "2022-07-14T13:08:03Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
