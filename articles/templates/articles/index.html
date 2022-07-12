@@ -5,12 +5,56 @@
     <div id="layoutSidenav_content">
         <main>
             <div class="container-fluid text-center">
-                <h1 class="mt-4">Заголовок</h1>
-                <div class="row main p-3 border border-grey mt-1">
-                    <div class="col-12 mt-5">
-                        Привет! Это временный текст для нашей главной странички.
+                <h1 class="mt-4 mb-4">Свежие статьи</h1>
+
+                {% for article in all_articles %}
+
+                    <div class="row main p-3 border border-grey mt-1">
+                        <div class="col-3">
+
+                            <div>
+                                <div class="col-12 row border">
+                                    <p>Добавлена: {{ article.registration_time | date }}</p>
+                                </div>
+                                <div class="col-12 row border">
+                                    <p> Категория: <strong>{{ article.category }}</strong></p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-9 mt-3 underlined">
+                            <h3>{{ article.title }}</h3>
+                        </div>
+
+                        <div class="col-12 mt-5">
+                            {{ article.body |truncatechars:350 }}
+                        </div>
+                        <div class="col-12 text-right">
+                            <a>Читать статью</a>
+                        </div>
                     </div>
-                </div>
+                {% endfor %}
+
+                <nav aria-label="Page navigation">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item {% if not page_obj.has_previous %} disabled {% endif %}">
+                            <a class="page-link font-xl {% if page_obj.has_previous %} oranged {% endif %}"
+                               href="{% if page_obj.has_previous %} ?page={{ page_obj.previous_page_number }}
+                               {% else %} # {% endif %}"
+                               tabindex="-1" aria-disabled="true">Previous</a>
+                        </li>
+                        {% for page in page_obj.paginator.page_range %}
+                            <li class="page-item"><a class="page-link oranged font-xl"
+                                                     href="?page={{ page }}">{{ page }}</a></li>
+                        {% endfor %}
+                        <li class="page-item {% if not page_obj.has_next %} disabled {% endif %}">
+                            <a class="page-link font-xl {% if page_obj.has_next %} oranged {% endif %}"
+                               href="{% if page_obj.has_next %} ?page={{ page_obj.next_page_number }}
+                                     {% else %} # {% endif %}">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+
             </div>
         </main>
         {% include 'articles/includes/footer.html' %}

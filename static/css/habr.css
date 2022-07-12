@@ -48,5 +48,30 @@ body {
 }
 
 .menu-font {
-    font-size: 1.5vw; !important;
+    font-size: 1.5vw;
+!important;
+}
+
+.underlined h3:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100px;
+    background: #211f1c;
+    top: -20%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.underlined h3:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100px;
+    background: #211f1c;
+    top: 100%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
 }

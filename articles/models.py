@@ -21,7 +21,7 @@ class Category(models.Model):
         return str(self.category_name)
 
     class Meta:
-        """Defines the model involved and the fields used in the form.
+        """Ordering categories according to their id.
         """
         ordering = ('id',)
 
@@ -74,3 +74,8 @@ class Article(models.Model):
         Returns the title of the article.
         """
         return str(self.title)
+
+    class Meta:
+        """Ordering articles according to their date of addition (the most recent ones first).
+        """
+        ordering = ['-registration_time', ]
