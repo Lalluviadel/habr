@@ -1,5 +1,5 @@
 """Contains custom commands for easy launch by manage.py."""
-from articles.models import HabrUser
+from userapp.models import HabrUser
 from django.core.management.base import BaseCommand
 from django.contrib.auth.models import User
 

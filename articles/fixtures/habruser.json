@@ -1,6 +1,6 @@
 [
 {
-  "model": "articles.habruser",
+  "model": "userapp.habruser",
   "pk": "0a3d6046-1802-4da8-9458-030864f900b1",
   "fields": {
     "password": "pbkdf2_sha256$260000$xywsTmYQEcHpVOVD0xaVus$E7UyfSwdFJUNa/wadYkXVZm5KiLGKViFPA9231KlX4o=",
@@ -23,7 +23,7 @@
   }
 },
 {
-  "model": "articles.habruser",
+  "model": "userapp.habruser",
   "pk": "5d06f46d-0bff-43da-a85e-41d74235093f",
   "fields": {
     "password": "user3",
@@ -46,7 +46,7 @@
   }
 },
 {
-  "model": "articles.habruser",
+  "model": "userapp.habruser",
   "pk": "6c1be9ea-b5ea-4d3a-b44e-0aa0402264a5",
   "fields": {
     "password": "user1",
@@ -69,7 +69,7 @@
   }
 },
 {
-  "model": "articles.habruser",
+  "model": "userapp.habruser",
   "pk": "ad8a5d72-8196-4981-a5d3-e4194d3ca0ef",
   "fields": {
     "password": "user2",
