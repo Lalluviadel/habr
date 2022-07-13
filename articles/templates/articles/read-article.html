@@ -6,9 +6,9 @@
         <main>
             <div class="container-fluid text-center">
                 <div class="row main p-3 mt-1">
-                    <div class="col-3">
+                    <div class="col-4">
 
-                        <div>
+                        <div class="text-left">
                             <div class="col-12 row border">
                                 <p>Добавлена: {{ article.registration_time | date }}</p>
                             </div>
@@ -21,12 +21,12 @@
                         </div>
 
                     </div>
-                    <div class="col-9 mt-3 underlined">
-                        <h3>{{ article.title }}</h3>
+                    <div class="col-8 mt-3 underlined">
+                        <h4>{{ article.title }}</h4>
                     </div>
 
-                    <div class="col-12 mt-5 menu-font">
-                        {{ article.body | safe }}
+                    <div class="col-12 mt-5 menu-font text-left">
+                            {{ article.body }}
                     </div>
 
                     <div class="col-12 mt-1 text-right">
@@ -41,7 +41,7 @@
                 <div class="row mb-4">
                     <div class="col-6">
                         <a class='btn btn-outline-dark btn-grey btn-block ml-3 mr-1 mb-1'
-                           href='#'>К статьям категории {{ article.category }}</a>
+                           href='{% url 'articles:category_read' article.category.slug %}'>К статьям категории {{ article.category }}</a>
                     </div>
                     <div class="col-6">
                         <a class='btn btn-outline-dark btn-grey btn-block ml-3 mr-1 mb-1'

@@ -5,9 +5,9 @@
     <div id="layoutSidenav_content">
         <main>
             <div class="container-fluid text-center">
-                <h2 class="mt-4 mb-4">Свежие статьи</h2>
+                <h2 class="mt-4 mb-4">{{ title }}</h2>
 
-                {% for article in all_articles %}
+                {% for article in category_articles %}
 
                     <div class="row main p-3 border border-grey mt-1 mb-1">
                         <div class="col-4">
@@ -17,7 +17,7 @@
                                     <p>Добавлена: {{ article.registration_time | date }}</p>
                                 </div>
                                 <div class="col-12 row border">
-                                    <p> Категория: <strong>{{ article.category }}</strong></p>
+                                    <p>Автор: <strong>{{ article.user }}</strong></p>
                                 </div>
                             </div>
 
@@ -30,8 +30,14 @@
                             {{ article.body |truncatechars:350 }}
                         </div>
                         <div class="col-12 text-right">
-                            <a class="grey" href="{% url 'articles:article_read' article.slug %}"
-                            >Читать статью</a>
+                            <a class="btn btn-sm btn-outline-dark rounded-3 btn-grey" href="{% url 'articles:article_read' article.slug %}">Читать статью</a>
+                        </div>
+                    </div>
+
+                {% empty %}
+                    <div class="row main p-3 border border-grey mt-1 mb-1">
+                        <div class="col-12 text-center">
+                            К сожалению, в данной категории пока нет статей
                         </div>
                     </div>
 
@@ -42,14 +48,14 @@
                         <li class="page-item {% if not page_obj.has_previous %} disabled {% endif %}">
                             <a class="page-link menu-font btn btn-sm btn-outline-dark rounded-3
                             {% if page_obj.has_previous %} btn-grey dark-grey {% else %} btn-grey-disabled {% endif %}"
-                               href="{% if page_obj.has_previous %} ?page={{ page_obj.previous_page_number }}
+                            href="{% if page_obj.has_previous %} ?page={{ page_obj.previous_page_number }}
                             {% else %} # {% endif %}"
-                               tabindex="-1" aria-disabled="true"><i class="fas fa-backward"></i></a>
+                            tabindex="-1" aria-disabled="true"><i class="fas fa-backward"></i></a>
                         </li>
                         {% for page in page_obj.paginator.page_range %}
                             <li class="page-item">
                                 <a class="page-link menu-font btn btn-sm btn-outline-dark rounded-3 btn-grey dark-grey"
-                                   href="?page={{ page }}">{{ page }}</a>
+                                href="?page={{ page }}">{{ page }}</a>
                             </li>
                         {% endfor %}
                         <li class="page-item {% if not page_obj.has_next %} disabled {% endif %}">

@@ -5,7 +5,7 @@
                 <div class="sb-sidenav-menu-heading">Разделы</div>
 
                 {% for item in category_menu_items %}
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="{% url 'articles:category_read' item.slug %}">
                         <div class="menu-font">{{ item.category_name }}</div>
                     </a>
                 {% endfor %}
