@@ -254,5 +254,117 @@
     "tag_name": "Дизайн мобильных приложений",
     "slug": "dizajn-mobilnyh-prilozhenij"
   }
+},
+{
+  "model": "articles.tag",
+  "pk": 33,
+  "fields": {
+    "tag_name": "JQuery",
+    "slug": "jquery"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 34,
+  "fields": {
+    "tag_name": "Ajax",
+    "slug": "ajax"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 35,
+  "fields": {
+    "tag_name": "NFT",
+    "slug": "nft"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 36,
+  "fields": {
+    "tag_name": "Hosting",
+    "slug": "hosting"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 37,
+  "fields": {
+    "tag_name": "Textures",
+    "slug": "textures"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 38,
+  "fields": {
+    "tag_name": "Шрифты",
+    "slug": "shrifty"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 39,
+  "fields": {
+    "tag_name": "шаблоны",
+    "slug": "shablony"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 40,
+  "fields": {
+    "tag_name": "copyright",
+    "slug": "copyright"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 41,
+  "fields": {
+    "tag_name": "Блоги",
+    "slug": "blogi"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 42,
+  "fields": {
+    "tag_name": "Продвижение сайтов",
+    "slug": "prodvizhenie-sajtov"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 43,
+  "fields": {
+    "tag_name": "SMM-технологии",
+    "slug": "smm-tehnologii"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 44,
+  "fields": {
+    "tag_name": "Социальные сети",
+    "slug": "socialnye-seti"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 45,
+  "fields": {
+    "tag_name": "Мессенджеры",
+    "slug": "messendzhery"
+  }
+},
+{
+  "model": "articles.tag",
+  "pk": 46,
+  "fields": {
+    "tag_name": "Telegram",
+    "slug": "telegram"
+  }
 }
 ]
