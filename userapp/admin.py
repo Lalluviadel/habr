@@ -7,7 +7,7 @@ from userapp.models import HabrUser
 class HabrUserAdmin(UserAdmin):
     fieldsets = UserAdmin.fieldsets
     fieldsets[1][1]['fields'] = fieldsets[1][1]['fields'] + (
-        'age',
+        'age', 'banned_until',
     )
 
     add_fieldsets = UserAdmin.add_fieldsets
@@ -15,7 +15,7 @@ class HabrUserAdmin(UserAdmin):
         'email', 'first_name', 'last_name', 'age',
     )
 
-    list_display = ('username', 'first_name', 'last_name', 'email', 'age', 'is_active')
+    list_display = ('username', 'first_name', 'last_name', 'email', 'age', 'is_active', 'banned_until')
     list_display_links = ('username',)
     search_fields = ('username', 'first_name', 'last_name', 'is_active')
 
