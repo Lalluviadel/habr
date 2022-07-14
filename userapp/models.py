@@ -17,6 +17,7 @@ class HabrUser(AbstractUser):
     activation_key = models.CharField(verbose_name="ключ подтверждения", max_length=128, blank=True)
     activation_key_expires = models.DateTimeField(verbose_name="актуальность ключа",
                                                   default=datetime.now() + timedelta(hours=48))
+    banned_until = models.DateTimeField(verbose_name="забанен до", blank=True, null=True)
 
     def __str__(self):
         """Forms a printable representation of the object.

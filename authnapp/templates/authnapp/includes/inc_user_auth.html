@@ -1,0 +1,6 @@
+{% if request.user.is_authenticated %}
+    <a class="dropdown-item" href="{% url 'auth:login' %}">{{ user.username|default:'Пользователь' }}</a>
+    <a class="dropdown-item" href="{% url 'auth:logout' %}">Выйти из профиля</a>
+{% else %}
+    <a class="dropdown-item" href="{% url 'auth:login' %}">Войти в профиль</a>
+{% endif %}
