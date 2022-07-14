@@ -19,7 +19,8 @@ from django.urls import path, include
 from articles.views import MainView
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', MainView.as_view(), name='index'),
-    path('articles/', include('articles.urls', namespace='articles')),
+    path("admin/", admin.site.urls),
+    path("", MainView.as_view(), name="index"),
+    path("articles/", include("articles.urls", namespace="articles")),
+    path("auth/", include("authnapp.urls", namespace="auth")),
 ]
