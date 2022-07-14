@@ -1,7 +1,7 @@
 """Provides package integration into the admin panel."""
 from django.contrib import admin
 
-from articles.models import Category, HabrUser, Tag, Article
+from articles.models import Category, Tag, Article
 
 
 class CategoryAdmin(admin.ModelAdmin):
@@ -18,12 +18,6 @@ class ArticleAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug': ('title',)}
 
 
-class UserAdmin(admin.ModelAdmin):
-    list_display = ('username', 'first_name', 'last_name', 'email', 'age', 'is_active')
-    list_display_links = ('username',)
-    search_fields = ('username', 'first_name', 'last_name', 'is_active')
-
-
 class TagAdmin(admin.ModelAdmin):
     list_display = ('id', 'tag_name')
     list_display_links = ('id', 'tag_name',)
@@ -33,5 +27,5 @@ class TagAdmin(admin.ModelAdmin):
 
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Article, ArticleAdmin)
-admin.site.register(HabrUser, UserAdmin)
+
 admin.site.register(Tag, TagAdmin)

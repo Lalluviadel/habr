@@ -10,3 +10,5 @@
 .idea
 .env
 *.simple
+venv
+__pycache__
