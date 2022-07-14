@@ -1,0 +1,21 @@
+{% extends 'articles/base.html' %}
+{% load static %}
+
+{% block content %}
+<div id="layoutSidenav_content">
+    <main>
+        <div class="container-fluid text-center">
+            <h2 class="mt-4 mb-4">{{ title }}</h2>
+            <div class="login">
+                <form class="form-horizontal" action="{% url 'auth:login' %}" method="post">
+                    {% csrf_token %}
+                    {{ login_form.as_p }}
+                    <br>
+                    <input class="form-control" type="submit" value="войти">
+                </form>
+            </div>
+        </div>
+    </main>
+    {% include 'articles/includes/footer.html' %}
+</div>
+{% endblock %}
